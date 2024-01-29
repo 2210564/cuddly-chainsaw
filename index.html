@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title> PERSONAL PORTFOLIO WEBSITE-KARRI.BHAVANA SRI</title>
+    <link rel="stylesheet" href="section.css">
+    <script src="https://kit.fontawesome.com/bb163096ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Hobbies">Hobbies</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="Openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> B-Tech(CSE) Student</p>
+                <h1>Hi, I'm <span>K.BHAVANA SRI</span><br> From India</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------------about------------ -->
+    <div id="about">
+        <div class="container">
+        <div class="row">
+            <div class="about.col-1">
+              <img src="image/user.png">
+            </div>
+                <div class="about.col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Bhavana.currently Im studying B-Tech2nd yr in CSE branch </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UI/Ux</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2024-current</span><br>Data Science intern at Microsoft</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="Education">
+                            <ul>
+                                <li><span>2023</span><br>Data Science Training at Adverk Technologies</li>
+                                <li><span>2022-2026</span><br>B-Tech(CSE) at Vignan Institute of Engineering for Womens,AP</li>
+                                <li><span>2022</span><br>Python,AWS and DevOps Training at Grafx IT sol.,Vizag</li>
+                            </ul>
+                        </div>
+                </div>
+        
+            </div>
+            <!-- -------------Hobbies------------ -->
+            <div id="Hobbies">
+                <div class="container">
+                    <h1 class="sub-title">My Hobbies</h1>
+                    <div class="Hobbies-list"></div>
+                    <div>
+                        
+                        <h2><i class="fa-solid fa-microphone-lines"></i> Singing</h2>
+                        <p>i love singing romantic songs.One of my favourite song is Tum Hi Ho 
+                            from Aashiqui 2</p>
+                            <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        
+                        <h2><i class="fa-solid fa-kitchen-set"></i> Cooking</h2>
+                        <p>i like cooking food especially non-veg(sea food)</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        
+                        <h2><i class="fa-solid fa-sun-plant-wilt"></i> Gardening</h2>
+                        <p>i like gardening coz it makes more me closer to the nature and makes my mind more peaceful</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Portfolio------------- -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>The app connects you to your favourite songs sang by your favourite singers around the world</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Food Delivery App</h3>
+                        <p> The app connects you to the different restaurants to make an order and cherish your food experience with your loved ones</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+    
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+        </div>
+    </div>
+    <!-- ---------------Contact------------- -->
+    <div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-left">
+           <h1 class="sub-title">Contact Me</h1>
+           <p><i class="fa-solid fa-paper-plane"></i>karrisri64@gmail.com</p>
+           <p><i class="fa-solid fa-phone"></i>8134030793</p>
+           <div class="social-icons">
+            <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://snapchat.com"><i class="fa-brands fa-snapchat"></i></a>
+           </div>
+           <a href="images/My-Resume.docx" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="Contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Bhavana <i class="fa-solid fa-heart"></i></p>
+    </div>
+    </div>
+ <script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+     function opentab(tabname){
+         for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+     }
+ </script>
+
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+  function Openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+ </body>
+</html>
